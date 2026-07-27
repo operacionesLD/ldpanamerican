@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll & Nómina Global - LD Panamerican Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LD Panamerican Group">
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('inicio') }}#inicio">Inicio</a>
+            <a href="{{ url_for('inicio') }}#nosotros">Nosotros</a>
+            <a href="{{ url_for('inicio') }}#soluciones">Soluciones</a>
+            <a href="{{ url_for('inicio') }}#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="service-hero payroll-hero">
+        <div class="service-hero-overlay"></div>
+        <div class="service-hero-content">
+            <span class="service-tag-top">PRECISIÓN FINANCIERA</span>
+            <h1>Dominio Global. Precisión Local.</h1>
+            <p>Simplificamos la complejidad de gestionar nóminas multijurisdiccionales con una plataforma única que elimina el error humano y garantiza el cumplimiento ciego.</p>
+            <a href="#solucion-payroll" class="btn-primary">Optimizar mi Nómina</a>
+        </div>
+    </header>
+
+    <section id="solucion-payroll" class="payroll-intro-section">
+        <div class="container-minimal">
+            <div class="payroll-intro-grid">
+                <div class="payroll-intro-text">
+                    <!--
+                    <span class="challenge-tag">LA PLATAFORMA</span>
+                    -->
+                    <h2>Tecnología de vanguardia con criterio experto</h2>
+                    <p>Nuestra solución combina el poder de la automatización avanzada con la supervisión de consultores senior. Eliminamos la carga administrativa para que su departamento financiero se enfoque en la estrategia, no en el procesamiento.</p>
+                    <div class="payroll-pill">Gestión en más de 100 países</div>
+                </div>
+                <div class="payroll-intro-image">
+                    <div class="image-glass-container">
+                        <img src="/static/img/payroll-platform.jpg" alt="Dashboard de Nómina" class="floating-img">
+                        <div class="glass-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payroll-values-section grey-bg">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <h2 class="section-title-premium">Por qué las empresas líderes nos eligen</h2>
+                <p>Blindamos su operación contra riesgos fiscales y operativos.</p>
+            </div>
+
+            <div class="payroll-cards-grid">
+                <div class="payroll-value-card reveal">
+                    <div class="value-icon-box">🛡️</div>
+                    <h3>Cumplimiento Blindado</h3>
+                    <p>Protección absoluta contra riesgos fiscales y errores de clasificación en más de 100 legislaciones locales simultáneas.</p>
+                </div>
+
+                <div class="payroll-value-card reveal">
+                    <div class="value-icon-box">🧠</div>
+                    <h3>Experiencia Human+</h3>
+                    <p>Automatización ágil potenciada por el criterio de consultores senior que garantizan cero errores en cálculos complejos.</p>
+                </div>
+
+                <div class="payroll-value-card reveal">
+                    <div class="value-icon-box">⚡</div>
+                    <h3>Simplicidad Operativa</h3>
+                    <p>Procesos que antes tomaban días, ahora se ejecutan en horas, integrados totalmente con sus sistemas de gestión actuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payroll-interactive-cta">
+        <div class="cta-gradient-overlay"></div>
+        <div class="container-minimal">
+            <div class="cta-flex">
+                <div class="cta-text">
+                    <h3>¿Listo para transformar su gestión de nómina?</h3>
+                    <p>Reduzca costos operativos y garantice la puntualidad en cada pago regional.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="#contacto-payroll" class="btn-gold-outline">Solicitar Demo de Plataforma</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-payroll" class="service-contact-section">
+        <div class="container-minimal">
+            <div class="contact-box-premium">
+                <h2>Inicie su Diagnóstico de Nómina</h2>
+                <p>Un experto en cumplimiento regional analizará su estructura actual y diseñará una propuesta de optimización.</p>
+                <form action="{{ url_for('contacto') }}" method="POST" class="premium-service-form">
+                    <div class="form-row-twin">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo corporativo" required>
+                    </div>
+                    <div class="form-row-twin">
+                        <input type="text" name="empresa" placeholder="Empresa" required>
+                        <select name="mensaje_extra" required>
+                            <option value="" disabled selected>Número de colaboradores</option>
+                            <option value="1-50">1 - 50</option>
+                            <option value="51-200">51 - 200</option>
+                            <option value="201+">Más de 200</option>
+                        </select>
+                    </div>
+                    <textarea name="mensaje" placeholder="Indique los países donde requiere gestionar nómina..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit-service">Enviar Solicitud de Alta Gama</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>LD Panamerican Group</h4>
+                <p>Estrategia, Tecnología y Ejecución con impacto regional.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto Corporativo</h4>
+                <p>Email: contacto@ldpanamerican.com</p>
+                <p>Sedes: Lima | Santiago | CDMX | Bogotá</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LD Panamerican Group. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animación de aparición al hacer Scroll (Reveal)
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

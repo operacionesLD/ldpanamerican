@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPO & Tercerización de Servicios - LD Panamerican Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LD Panamerican Group">
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('inicio') }}#inicio">Inicio</a>
+            <a href="{{ url_for('inicio') }}#nosotros">Nosotros</a>
+            <a href="{{ url_for('inicio') }}#soluciones">Soluciones</a>
+            <a href="{{ url_for('inicio') }}#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="service-hero bpo-hero">
+        <div class="service-hero-overlay"></div>
+        <div class="service-hero-content">
+            <span class="service-tag-top">EFICIENCIA OPERATIVA</span>
+            <h1>Externaliza. Optimiza.<br>Enfócate en lo que realmente importa.</h1>
+            <p>Soluciones BPO para empresas que buscan eficiencia, calidad y reducción de costos en Latinoamérica.</p>
+            <div class="hero-btns">
+                <a href="#contacto" class="btn-mandarina">Agenda una reunión</a>
+                <!--
+                <a href="#contacto-bpo" class="btn-primary">Solicita una propuesta</a>
+                <a href="#contacto-bpo" class="btn-outline-white">Hablar con un experto</a>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <section id="problemas-bpo" class="bpo-problems-section">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <span class="challenge-tag">DIAGNÓSTICO SITUACIONAL</span>
+                <h2>Procesos internos que consumen tiempo y recursos</h2>
+                <p>Identifique los cuellos de botella que frenan la escalabilidad de su Core Business.</p>
+            </div>
+
+            <div class="bpo-pain-grid">
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">📉</div>
+                    <h3>Altos costos operativos</h3>
+                    <p>Inversión excesiva en infraestructura, licencias y cargas prestacionales fijas.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">🔄</div>
+                    <h3>Procesos repetitivos e improductivos</h3>
+                    <p>Fuerza laboral valiosa atrapada en tareas transaccionales de bajo impacto estratégico.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">👁️</div>
+                    <h3>Falta de control y visibilidad</h3>
+                    <p>Ausencia de KPIs claros y dificultades operativas para auditar la calidad interna.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">🚀</div>
+                    <h3>Dificultad para escalar operaciones</h3>
+                    <p>Rigidez estructural para absorber incrementos repentinos en la demanda del mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bpo-solution-section grey-bg">
+        <div class="container-minimal">
+            <div class="bpo-solution-layout">
+                <div class="bpo-solution-text">
+                    <span class="solution-tag">NUESTRA RESPUESTA</span>
+                    <h2>Soluciones BPO que impulsan la eficiencia de tu empresa</h2>
+                    <p>Nos encargamos de tus procesos no estratégicos con equipos especializados, tecnología de vanguardia y los más altos estándares de calidad.</p>
+                    
+                    <ul class="talent-check-list">
+                        <li><span class="check-icon">✓</span> <strong>Más productividad y menor costo:</strong> Convertimos costos fijos en variables optimizados.</li>
+                        <li><span class="check-icon">✓</span> <strong>Equipos capacitados y gestionados:</strong> Mitigamos el riesgo legal corporativo y operativo.</li>
+                        <li><span class="check-icon">✓</span> <strong>Procesos estandarizados y medibles:</strong> Control absoluto mediante dashboards compartidos.</li>
+                        <li><span class="check-icon">✓</span> <strong>Enfoque en tu core del negocio:</strong> Liberamos a su alta gerencia para la ejecución estratégica.</li>
+                    </ul>
+                </div>
+
+                <div class="bpo-dynamic-card reveal-dashboard">
+                    <div class="efficiency-card">
+                        <h3>Eficiencia Proyectada LD</h3>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Optimización de Gastos</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="85%">0%</div></div>
+                        </div>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Estandarización de Procesos</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="92%">0%</div></div>
+                        </div>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Continuidad Operativa Garantizada</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="100%">0%</div></div>
+                        </div>
+                        <p class="stat-footer">* Impacto promedio estimado en implementaciones regionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bpo-capabilities-tabs-section">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <span class="challenge-tag">PORTAFOLIO INTEGRAL</span>
+                <h2>Estructura diseñada para la excelencia operativa</h2>
+                <p>Explore las ventajas competitivas y las unidades de negocio que ponemos a su disposición.</p>
+            </div>
+
+            <div class="bpo-tabs-nav">
+                <button class="tab-trigger active" onclick="switchBpoTab(event, 'beneficios-tab')">Beneficios de Tercerizar</button>
+                <button class="tab-trigger" onclick="switchBpoTab(event, 'servicios-tab')">Nuestros Servicios BPO</button>
+            </div>
+
+            <div id="beneficios-tab" class="bpo-tab-content active">
+                <div class="bpo-matrix-grid">
+                    <div class="matrix-item">
+                        <div class="matrix-number">01</div>
+                        <h4>Reducción de costos</h4>
+                        <p>Disminución inmediata del gasto en capital y minimización de activos fijos operativos.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">02</div>
+                        <h4>Mayor eficiencia operativa</h4>
+                        <p>Flujos de trabajo rediseñados bajo metodologías ágiles y automatización.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">03</div>
+                        <h4>Escalabilidad inmediata</h4>
+                        <p>Infraestructura flexible que crece en tiempo récord junto con sus metas de expansión.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">04</div>
+                        <h4>Calidad y estándares altos</h4>
+                        <p>Garantía de Service Level Agreements (SLAs) regulados bajo estándares mundiales.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">05</div>
+                        <h4>Flexibilidad y adaptabilidad</h4>
+                        <p>Ajustes dinámicos de capacidad de respuesta según las temporadas de su mercado.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">06</div>
+                        <h4>Enfoque en tu crecimiento</h4>
+                        <p>Máxima concentración institucional en innovación, ventas y penetración de marca.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servicios-tab" class="bpo-tab-content">
+                <div class="services-bpo-pills-container">
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">🎧</div>
+                        <h4>Atención al cliente</h4>
+                        <p>Contact Center omnicanal y soluciones de Customer Experience de alta fidelización.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">📂</div>
+                        <h4>Soporte administrativo</h4>
+                        <p>Gestión documental, data entry estructurado y digitalización integral de procesos.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">💳</div>
+                        <h4>Gestión de cobranzas</h4>
+                        <p>Estrategias de recuperación de cartera vigencial y extrajudicial automatizada.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">⚙️</div>
+                        <h4>Back office y operaciones</h4>
+                        <p>Procesamiento de transacciones complejas y soporte operativo de alta precisión.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">👥</div>
+                        <h4>Recursos Humanos</h4>
+                        <p>Administración de personal, control de asistencia y servicios complementarios de soporte.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">📊</div>
+                        <h4>Soporte comercial</h4>
+                        <p>Agendamiento de citas ejecutivas, prospección de leads B2B y telemarketing avanzado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-bpo" class="service-contact-section grey-bg">
+        <div class="container-minimal">
+            <div class="contact-box-premium">
+                <h2>Diseñemos su ecosistema BPO</h2>
+                <p>Permita que nuestros analistas de procesos estructuren un diagnóstico operativo sin costo.</p>
+                <form action="{{ url_for('contacto') }}" method="POST" class="premium-service-form">
+                    <div class="form-row-twin">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo corporativo" required>
+                    </div>
+                    <textarea name="mensaje" placeholder="Describa brevemente qué procesos operativos o administrativos le interesa delegar..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit-service">Solicitar Diagnóstico Operativo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>LD Panamerican Group</h4>
+                <p>Estrategia, Tecnología y Ejecución con impacto regional.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto Corporativo</h4>
+                <p>Email: contacto@ldpanamerican.com</p>
+                <p>&copy; 2026 LD Panamerican Group. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Observador para animaciones por Scroll (Cards y Dashboard)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Si entra en pantalla la tarjeta del Dashboard, disparamos el crecimiento de las barras
+                    if (entry.target.classList.contains('reveal-dashboard')) {
+                        const fills = entry.target.querySelectorAll('.stat-fill');
+                        fills.forEach(fill => {
+                            const targetWidth = fill.getAttribute('data-target');
+                            fill.style.width = targetWidth;
+                            fill.innerText = targetWidth; // Actualiza el texto interno del 0% al valor real
+                        });
+                    }
+                }
+            });
+        }, { threshold: 0.15 });
+
+        // Asignar observadores
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        document.querySelectorAll('.reveal-dashboard').forEach(el => observer.observe(el));
+
+        // Controlador de Pestañas (Tabs)
+        function switchBpoTab(event, tabId) {
+            const contents = document.querySelectorAll('.bpo-tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const triggers = document.querySelectorAll('.tab-trigger');
+            triggers.forEach(trigger => trigger.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
