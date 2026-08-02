@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPO & Tercerización de Servicios - LD Panamerican Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo_2.png') }}" alt="LD Panamerican Group">
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('inicio') }}#inicio">Inicio</a>
+            <a href="{{ url_for('nosotros3') }}#nosotros">Nosotros</a>
+            <!--<a href="{{ url_for('inicio') }}#soluciones">Soluciones</a>-->
+            <!--<a href="{{ url_for('inicio') }}#contacto">Contacto</a>-->
+            <a href="javascript:void(0)" class="btn-mandarina" onclick="toggleModal()" style="padding: 12px 25px; font-size: 13px;">Habla con un experto</a>
+        </div>
+    </nav>
+
+    <header class="service-hero bpo-hero">
+        <div class="service-hero-overlay"></div>
+        <img src="{{ url_for('static', filename='img/BPO_hero_2.png') }}"  class="hero-background-image"> 
+        <div class="service-hero-content">
+            <span class="service-tag-top">EFICIENCIA OPERATIVA</span>
+            <h1>Externaliza. Optimiza.<br>Enfócate en lo que realmente importa.</h1>
+            <p class="ld-text-muted">Soluciones BPO para empresas que buscan eficiencia, calidad y reducción de costos en Latinoamérica.</p>
+            <div class="hero-btns">
+                <a href="javascript:void(0)" class="btn-mandarina" onclick="toggleModal()">Agenda una reunión</a>
+                <!--
+                <a href="#contacto-bpo" class="btn-primary">Solicita una propuesta</a>
+                <a href="#contacto-bpo" class="btn-outline-white">Hablar con un experto</a>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <section id="problemas-bpo" class="bpo-problems-section">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <span class="challenge-tag">DIAGNÓSTICO SITUACIONAL</span>
+                <h2>Procesos internos que consumen tiempo y recursos</h2>
+                <p>Identifique los cuellos de botella que frenan la escalabilidad de su Core Business.</p>
+            </div>
+
+            <div class="bpo-pain-grid">
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">📉</div>
+                    <h3>Altos costos operativos</h3>
+                    <p>Inversión excesiva en infraestructura, licencias y cargas prestacionales fijas.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">🔄</div>
+                    <h3>Procesos repetitivos e improductivos</h3>
+                    <p>Fuerza laboral valiosa atrapada en tareas transaccionales de bajo impacto estratégico.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">👁️</div>
+                    <h3>Falta de control y visibilidad</h3>
+                    <p>Ausencia de KPIs claros y dificultades operativas para auditar la calidad interna.</p>
+                </div>
+                <div class="bpo-pain-item card-pain reveal">
+                    <div class="bpo-icon-circle">🚀</div>
+                    <h3>Dificultad para escalar operaciones</h3>
+                    <p>Rigidez estructural para absorber incrementos repentinos en la demanda del mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bpo-solution-section grey-bg">
+        <div class="container-minimal">
+            <div class="bpo-solution-layout">
+                <div class="bpo-solution-text">
+                    <span class="solution-tag">NUESTRA RESPUESTA</span>
+                    <h2>Soluciones BPO que impulsan la eficiencia de tu empresa</h2>
+                    <p>Nos encargamos de tus procesos no estratégicos con equipos especializados, tecnología de vanguardia y los más altos estándares de calidad.</p>
+                    
+                    <ul class="talent-check-list">
+                        <li><span class="check-icon"></span> <strong>Más productividad y menor costo:</strong> Convertimos costos fijos en variables optimizados.</li>
+                        <li><span class="check-icon"></span> <strong>Equipos capacitados y gestionados:</strong> Mitigamos el riesgo legal corporativo y operativo.</li>
+                        <li><span class="check-icon"></span> <strong>Procesos estandarizados y medibles:</strong> Control absoluto mediante dashboards compartidos.</li>
+                        <li><span class="check-icon"></span> <strong>Enfoque en tu core del negocio:</strong> Liberamos a su alta gerencia para la ejecución estratégica.</li>
+                    </ul>
+                </div>
+
+                <div class="bpo-dynamic-card reveal-dashboard">
+                    <div class="efficiency-card">
+                        <h3>Eficiencia Proyectada LD</h3>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Optimización de Gastos</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="85%">0%</div></div>
+                        </div>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Estandarización de Procesos</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="92%">0%</div></div>
+                        </div>
+                        <div class="efficiency-stat">
+                            <span class="stat-label">Continuidad Operativa Garantizada</span>
+                            <div class="stat-bar"><div class="stat-fill" data-target="100%">0%</div></div>
+                        </div>
+                        <p class="stat-footer">* Impacto promedio estimado en implementaciones regionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bpo-capabilities-tabs-section">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <span class="challenge-tag">PORTAFOLIO INTEGRAL</span>
+                <h2>Estructura diseñada para la excelencia operativa</h2>
+                <p>Explore las ventajas competitivas y las unidades de negocio que ponemos a su disposición.</p>
+            </div>
+
+            <div class="bpo-tabs-nav">
+                <button class="tab-trigger active" onclick="switchBpoTab(event, 'beneficios-tab')">Beneficios de Tercerizar</button>
+                <button class="tab-trigger" onclick="switchBpoTab(event, 'servicios-tab')">Nuestros Servicios BPO</button>
+            </div>
+
+            <div id="beneficios-tab" class="bpo-tab-content active">
+                <div class="bpo-matrix-grid">
+                    <div class="matrix-item">
+                        <div class="matrix-number">01</div>
+                        <h4>Reducción de costos</h4>
+                        <p>Disminución inmediata del gasto en capital y minimización de activos fijos operativos.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">02</div>
+                        <h4>Mayor eficiencia operativa</h4>
+                        <p>Flujos de trabajo rediseñados bajo metodologías ágiles y automatización.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">03</div>
+                        <h4>Escalabilidad inmediata</h4>
+                        <p>Infraestructura flexible que crece en tiempo récord junto con sus metas de expansión.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">04</div>
+                        <h4>Calidad y estándares altos</h4>
+                        <p>Garantía de Service Level Agreements (SLAs) regulados bajo estándares mundiales.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">05</div>
+                        <h4>Flexibilidad y adaptabilidad</h4>
+                        <p>Ajustes dinámicos de capacidad de respuesta según las temporadas de su mercado.</p>
+                    </div>
+                    <div class="matrix-item">
+                        <div class="matrix-number">06</div>
+                        <h4>Enfoque en tu crecimiento</h4>
+                        <p>Máxima concentración institucional en innovación, ventas y penetración de marca.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servicios-tab" class="bpo-tab-content">
+                <div class="services-bpo-pills-container">
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">🎧</div>
+                        <h4>Atención al cliente</h4>
+                        <p>Contact Center omnicanal y soluciones de Customer Experience de alta fidelización.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">📂</div>
+                        <h4>Soporte administrativo</h4>
+                        <p>Gestión documental, data entry estructurado y digitalización integral de procesos.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">💳</div>
+                        <h4>Gestión de cobranzas</h4>
+                        <p>Estrategias de recuperación de cartera vigencial y extrajudicial automatizada.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">⚙️</div>
+                        <h4>Back office y operaciones</h4>
+                        <p>Procesamiento de transacciones complejas y soporte operativo de alta precisión.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">👥</div>
+                        <h4>Recursos Humanos</h4>
+                        <p>Administración de personal, control de asistencia y servicios complementarios de soporte.</p>
+                    </div>
+                    <div class="bpo-pill-card">
+                        <div class="pill-icon">📊</div>
+                        <h4>Soporte comercial</h4>
+                        <p>Agendamiento de citas ejecutivas, prospección de leads B2B y telemarketing avanzado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-bpo" class="service-contact-section grey-bg">
+        <div class="container-minimal">
+            <div class="contact-box-premium">
+                <h2>Diseñemos su ecosistema BPO</h2>
+                <p>Permita que nuestros analistas de procesos estructuren un diagnóstico operativo sin costo.</p>
+                <form action="{{ url_for('contacto') }}" method="POST" class="premium-service-form">
+                    <div class="form-row-twin">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo corporativo" required>
+                    </div>
+                    <textarea name="mensaje" placeholder="Describa brevemente qué procesos operativos o administrativos le interesa delegar..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit-service">Solicitar Diagnóstico Operativo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column branding-col">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='img/Logo_fondoAzul.png') }}" alt="LD Panamerican Group">
+                </div>
+                <p class="footer-desc">
+                    Socio estratégico en la externalización laboral, contable y administrativa en LATAM. Conectamos mercados, blindamos operaciones y optimizamos tu rendimiento financiero.
+                </p>
+                <div class="footer-socials">
+                    <!--
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    -->
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 16px; height: 16px; fill: currentColor;">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 1 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 14px; height: 14px; fill: currentColor;">
+                                <path d="M80 299.3V256H16v-64h64v-46.7C80 81.5 116.1 48 181.7 48 213.2 48 240 50.4 247.9 51.5v76.8h-45.5c-30.7 0-36.7 14.6-36.7 36v51.7h85.2l-11.1 64h-74.1V448H80V299.3z"/>
+                            </svg>
+                        </a>  
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 16px; height: 16px; fill: currentColor;">
+                                <path d="M224.1 141c-43.6 0-79 35.4-79 79s35.4 79 79 79 79-35.4 79-79-35.4-79-79-79zm0 125c-25.3 0-46-20.7-46-46s20.7-46 46-46 46 20.7 46 46-20.7 46-46 46zm153.6-125.9c-4.4-11-13.2-19.8-24.1-24.2-12.7-5-42.9-3.9-74.1-3.9s-61.4-1.1-74.1 3.9c-11 4.4-19.8 13.2-24.2 24.2-5 12.7-3.9 42.9-3.9 74.1s-1.1 61.4 3.9 74.1c4.4 11 13.2 19.8 24.2 24.2 12.7 5 42.9 3.9 74.1 3.9s61.4 1.1 74.1-3.9c11-4.4 19.8-13.2 24.1-24.2 5-12.7 3.9-42.9 3.9-74.1s1.1-61.4-3.9-74.1zm-153.6 195c-53.5 0-96.9-43.4-96.9-96.9s43.4-96.9 96.9-96.9 96.9 43.4 96.9 96.9-43.4 96.9-96.9 96.9zm113.4-180.5c-12.5 0-22.7-10.2-22.7-22.7s10.2-22.7 22.7-22.7 22.7 10.2 22.7 22.7-10.2 22.7-22.7 22.7z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h4 class="footer-title">Navegación</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/#servicios">Servicios Corporativos</a></li>
+                    <!--<li><a href="/#expansion">Expansión LATAM</a></li>-->
+                    <!--<li><a href="/#contacto">Blog</a></li>-->
+                    <li><a href="{{ url_for('nosotros') }}">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column links-col">
+                <h4 class="footer-title">Soluciones</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/#servicios">Headhunting ejecutivo</a></li>
+                    <li><a href="/#servicios">Nómina</a></li>
+                    <li><a href="/#servicios">Employer of Record</a></li>
+                    <li><a href="/#servicios">Tercerización</a></li>
+                    <li><a href="/#servicios">Contabilidad Corporativa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h4 class="footer-title">Contacto Central</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">Lima, Perú (Sede Central LATAM)</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-text">operaciones@ldpanam.com</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-text">+51 900 000 000</span>
+                    </li>
+                </ul>
+                <div class="footer-status-tag">
+                    <span class="status-pulse"></span> Operación Regional Activa
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 LD Panamerican Group. Todos los derechos reservados.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Políticas de Privacidad</a>
+                    <span class="legal-separator">|</span>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Observador para animaciones por Scroll (Cards y Dashboard)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Si entra en pantalla la tarjeta del Dashboard, disparamos el crecimiento de las barras
+                    if (entry.target.classList.contains('reveal-dashboard')) {
+                        const fills = entry.target.querySelectorAll('.stat-fill');
+                        fills.forEach(fill => {
+                            const targetWidth = fill.getAttribute('data-target');
+                            fill.style.width = targetWidth;
+                            fill.innerText = targetWidth; // Actualiza el texto interno del 0% al valor real
+                        });
+                    }
+                }
+            });
+        }, { threshold: 0.15 });
+
+        // Asignar observadores
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        document.querySelectorAll('.reveal-dashboard').forEach(el => observer.observe(el));
+
+        // Controlador de Pestañas (Tabs)
+        function switchBpoTab(event, tabId) {
+            const contents = document.querySelectorAll('.bpo-tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const triggers = document.querySelectorAll('.tab-trigger');
+            triggers.forEach(trigger => trigger.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // HCA 20260801 - INI
+        // 2. Función Global para abrir/cerrar el Formulario Flotante (Modal)
+        function toggleModal() {
+            const modal = document.getElementById('modalDiagnostico');
+            if (modal) {
+                if (modal.style.display === 'flex') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; 
+                } else {
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; 
+                }
+            } else {
+                console.error("Error: El contenedor HTML '#modalDiagnostico' no se encuentra en esta página.");
+            }
+        }
+
+        // Cerrar el modal al hacer clic fuera del cuadro blanco
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('modalDiagnostico');
+            if (event.target === modal) {
+                toggleModal();
+            }
+        });
+
+        // 3. Procesamiento de envíos de formularios (Hero y Modal flotante)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Formulario del Hero
+            const heroForm = document.getElementById('lead-hero-form');
+            if (heroForm) {
+                heroForm.addEventListener('submit', function() {
+                    const submitBtn = heroForm.querySelector('.btn-form-submit');
+                    submitBtn.innerText = 'Enviando solicitud...';
+                    submitBtn.style.opacity = '0.8';
+                    submitBtn.style.pointerEvents = 'none';
+                });
+            }
+
+            // Formulario Flotante (Modal)
+            const contactoForm = document.getElementById('form-diagnostico');
+            if (contactoForm) {
+                contactoForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); 
+                    const formData = new FormData(this);
+
+                    fetch('/contacto', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            alert("Solicitud recibida. Un consultor senior de Panamerican lo contactará en breve.");
+                            this.reset();    
+                            toggleModal();  
+                        } else {
+                            alert("Hubo un error al enviar. Por favor, intente de nuevo o contáctenos por correo.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error de conexión:', error);
+                        alert("Error de red. Verifique su conexión e intente nuevamente.");
+                    });
+                });
+            }
+        });
+        // HCA 20260614 - ENVIO DE CORREO - INI
+        document.addEventListener("DOMContentLoaded", function() {
+            const heroForm = document.getElementById('lead-hero-form');
+    
+            if (heroForm) {
+                heroForm.addEventListener('submit', function(event) {
+                    let isValid = true;
+            
+                    // Limpieza de alertas y bordes rojos previos
+                    const errores = heroForm.querySelectorAll('.error-msg');
+                    errores.forEach(el => el.innerText = '');
+                    const inputs = heroForm.querySelectorAll('input, textarea');
+                    inputs.forEach(input => input.style.borderColor = '#CBD5E1');
+
+                    // 1. Validaciones básicas de seguridad
+                    if (document.getElementById('nombre').value.trim().length < 3) {
+                        document.getElementById('error-nombre').innerText = 'Ingresa tu nombre completo.';
+                        document.getElementById('nombre').style.borderColor = '#EF4444';
+                        isValid = false;
+                    }
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('correo').value.trim())) {
+                        document.getElementById('error-correo').innerText = 'Ingresa un correo válido.';
+                        document.getElementById('correo').style.borderColor = '#EF4444';
+                        isValid = false;
+                    }
+                    if (document.getElementById('mensaje').value.trim().length < 5) {
+                        document.getElementById('error-mensaje').innerText = 'Por favor, escribe una consulta detallada.';
+                        document.getElementById('mensaje').style.borderColor = '#EF4444';
+                        isValid = false;
+                    }
+
+                    // 2. Control del envío
+                    if (!isValid) {
+                        event.preventDefault(); // Cancela el envío únicamente si hay errores visuales
+                    } else {
+                        // Si todo es válido, cambiamos el estado del botón y dejamos que se envíe
+                        const submitBtn = document.getElementById('btn-cotizar');
+                        submitBtn.innerText = 'Enviando...';
+                        submitBtn.style.opacity = '0.7';
+                
+                        // Nota: Guardamos en el almacenamiento local que el mensaje fue enviado con éxito 
+                        // para levantar el pop-up inmediatamente al procesar la recarga limpia.
+                        localStorage.setItem('formEnviadoExito', 'true');
+                    }
+                });
+            }
+
+            // Comprobar si venimos de enviar el formulario para mostrar el Pop-up corporativo
+            if (localStorage.getItem('formEnviadoExito') === 'true') {
+                mostrarPopupExito();
+                localStorage.removeItem('formEnviadoExito'); // Limpiamos la bandera
+            }
+        });
+        // Funciones de control del Pop-up de Confirmación
+        function mostrarPopupExito() {
+            const popup = document.getElementById('popup-exito');
+            if (popup) {
+                popup.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        function cerrarPopupExito() {
+            const popup = document.getElementById('popup-exito');
+            if (popup) {
+                popup.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        } 
+        // HCA 20260801 - FIN
+    </script>
+    <!-- HCA 20260608 - FORMULARIO - INI -->
+     <div id="modalDiagnostico" class="modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(6, 14, 26, 0.85); align-items: center; justify-content: center;">
+        <div class="modal-content" style="background-color: #ffffff; padding: 40px; border-radius: 16px; width: 90%; max-width: 500px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3);">
+            <span class="close-modal" onclick="toggleModal()" style="position: absolute; top: 15px; right: 20px; font-size: 28px; color: #64748B; cursor: pointer; font-weight: bold;">&times;</span>
+            
+            <h3 style="color: #0A192F; font-size: 1.6rem; margin-bottom: 8px; font-weight: 700;">Contratar Talento Estratégico</h3>
+            <p style="color: #64748B; font-size: 0.9rem; margin-bottom: 25px;">Completa tus datos y estructuraremos una propuesta de reclutamiento a la medida de tu organización.</p>
+            
+            <form id="form-diagnostico">
+                <div style="margin-bottom: 15px;">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="email" name="correo" placeholder="Correo corporativo" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="tel" name="telefono" placeholder="Teléfono de contacto" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="text" name="empresa" placeholder="Empresa / Organización" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <textarea name="mensaje" placeholder="Describe brevemente el perfil o necesidad que buscas cubrir..." rows="3" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn-form-submit" style="width: 100%; padding: 14px; background-color: #FF7A00; color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer; font-size: 1rem; box-shadow: 0 4px 15px rgba(255,122,0,0.3);">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+    <!-- HCA 20260608 - FORMULARIO - FIN -->
+</body>
+</html>
