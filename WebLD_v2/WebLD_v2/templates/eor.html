@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer of Record (EOR) LATAM - LD Panamerican Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LD Panamerican Group">
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('inicio') }}#inicio">Inicio</a>
+            <a href="{{ url_for('nosotros3') }}#nosotros">Nosotros</a>
+            <a href="javascript:void(0)" class="btn-mandarina" onclick="toggleModal()" style="padding: 12px 25px; font-size: 13px;">Habla con un experto</a>
+        </div>
+    </nav>
+
+    <header class="service-hero">
+        <div class="service-hero-overlay"></div>
+        <img src="{{ url_for('static', filename='img/EOR_HERO_2.jpg') }}"  class="hero-background-image"> 
+        <div class="service-hero-content">
+            <span class="service-tag-top">SOLUCIONES GLOBALES</span>
+            <h1>Employer of Record (EOR) en Latinoamérica</h1>
+            <p class="ld-text-muted">Contrate, gestione y pague a su equipo en cualquier país de la región en cuestión de días, sin el costo ni la complejidad de abrir una sucursal legal propia.</p>
+            <a href="javascript:void(0)" class="btn-mandarina" onclick="toggleModal()">Agenda una reunión</a>
+        </div>
+    </header>
+
+    <section class="service-deep-dive">
+        <div class="container-minimal">
+            <div class="dive-grid">
+                <div class="dive-text">
+                    <h2>¿Qué es un modelo Employer of Record?</h2>
+                    <p>Un <strong>Employer of Record (EOR)</strong> es un aliado estratégico internacional que se convierte en el empleador legal de sus trabajadores en el extranjero. Mientras usted mantiene el control absoluto del día a día, el liderazgo y las metas operativas de sus colaboradores, <strong>LD Panamerican Group</strong> se encarga de toda la carga administrativa, laboral, fiscal y de nómina local.</p>
+                    <p>Esto mitiga por completo el riesgo de multas regulatorias, agiliza la entrada a nuevos mercados altamente dinámicos y garantiza un ecosistema operativo de alta gama.</p>
+                </div>
+                <div class="dive-metrics">
+                    <div class="metric-card">
+                        <span class="metric-num">72h</span>
+                        <p class="metric-lbl">Tiempo de onboarding e inicio de operaciones por país.</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-num">0</span>
+                        <p class="metric-lbl">Entidades legales o sucursales requeridas para comenzar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pain-points-section">
+        <div class="container-minimal">
+            <div class="section-intro-center">
+                <h2 class="section-title-premium">Desafíos críticos de la expansión tradicional</h2>
+            </div>
+            <div class="pain-points-grid">
+                <div class="pain-card">
+                    <div class="pain-icon"><span class="icon-circle">$</span></div>
+                    <h3>Altos costos</h3>
+                    <p>Abrir y mantener una entidad legal propia en cada país es un proceso costoso y lento que drena recursos.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><span class="icon-circle">⏳</span></div>
+                    <h3>Procesos lentos</h3>
+                    <p>La expansión tradicional puede tomar meses o incluso años, retrasando tu entrada a mercados estratégicos.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><span class="icon-circle">⚠</span></div>
+                    <h3>Riesgos legales</h3>
+                    <p>El incumplimiento de leyes locales y normativas fiscales puede generar multas severas y sanciones.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon"><span class="icon-circle">📋</span></div>
+                    <h3>Complejidad payroll</h3>
+                    <p>Gestionar nómina, impuestos y beneficios en múltiples divisas y legislaciones es una carga operativa crítica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-eor-section">
+        <div class="container-minimal">
+            <div class="solution-grid">
+                <div class="solution-text">
+                    <span class="solution-tag">NUESTRA PROPUESTA</span>
+                    <h2>Con Panamerican EOR, expandes sin fricción</h2>
+                    <p>Nos convertimos en tu aliado estratégico para que tu única preocupación sea el crecimiento de tu negocio. Nosotros nos encargamos de la complejidad operativa en cada país.</p>
+                </div>
+                <div class="solution-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✔</div>
+                        <div class="benefit-content">
+                            <h4>Cumplimiento Local 100%</h4>
+                            <p class="ld-text-muted">Garantizamos que cada contrato y pago cumpla estrictamente con la ley laboral vigente.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✔</div>
+                        <div class="benefit-content">
+                            <h4>Gestión Multi-moneda</h4>
+                            <p class="ld-text-muted">Simplificamos el pago de nómina en dólares o moneda local según tus necesidades.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✔</div>
+                        <div class="benefit-content">
+                            <h4>Velocidad de Entrada</h4>
+                            <p class="ld-text-muted">Inicia operaciones en nuevos mercados en cuestión de días, no meses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="container-minimal">
+            <div class="comparison-grid">
+                <div class="comparison-text">
+                    <span class="solution-tag">COMPARATIVA</span>
+                    <h2>¿Por qué elegir un modelo EOR frente al tradicional?</h2>
+                    <p>La expansión mediante una entidad legal propia requiere tiempo y capital excesivo. Con nuestro modelo EOR, eliminas las barreras estructurales de entrada.</p>
+                </div>
+                <div class="comparison-table-container">
+                    <table class="premium-table">
+                        <thead>
+                            <tr>
+                                <th>Beneficios</th>
+                                <th>Tradicional</th>
+                                <th class="highlight-col">Panamerican EOR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiempo de implementación</td>
+                                <td>6 - 12 meses</td>
+                                <td class="highlight-cell">72 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Costos de constitución</td>
+                                <td>Muy altos</td>
+                                <td class="highlight-cell">Cero</td>
+                            </tr>
+                            <tr>
+                                <td>Riesgo de cumplimiento</td>
+                                <td>Alto / Local</td>
+                                <td class="highlight-cell">Mínimo / Garantizado</td>
+                            </tr>
+                            <tr>
+                                <td>Gestión de nómina</td>
+                                <td>Descentralizada</td>
+                                <td class="highlight-cell">Plataforma Única</td>
+                            </tr>
+                            <tr>
+                                <td>Cierre de operaciones</td>
+                                <td>Complejo / Caro</td>
+                                <td class="highlight-cell">Inmediato</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO INCRUSTADO (AJAX FormSubmit) -->
+    <section id="contacto-servicio" class="service-contact-section">
+        <div class="container-minimal">
+            <div class="contact-box-premium">
+                <h2>Solicite una Sesión de Diagnóstico</h2>
+                <p>Déjenos sus requerimientos y uno de nuestros expertos en movilidad global corporativa estructurará su plan regional.</p>
+                
+                <form id="form-incrustado-eor" action="https://formsubmit.co/ajax/hcerna03@gmail.com" method="POST" class="premium-service-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Nueva solicitud de Diagnóstico EOR">
+
+                    <div class="form-row-twin">
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                        <input type="email" name="correo" placeholder="Correo Corporativo" required>
+                    </div>
+                    <div class="form-row-twin">
+                        <input type="text" name="empresa" placeholder="Empresa" required>
+                        <select name="pais_destino" required>
+                            <option value="" disabled selected>País destino de interés</option>
+                            <option value="PE">Perú</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="MX">México</option>
+                            <option value="Otros">Otros mercados LATAM</option>
+                        </select>
+                    </div>
+                    <textarea name="mensaje" placeholder="Detalle brevemente las posiciones o número de colaboradores que requiere contratar de manera inmediata..." rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn-submit-service">Enviar Requerimiento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column branding-col">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='Logo_fondoAzul.png') }}" alt="LD Panamerican Group">
+                </div>
+                <p class="footer-desc">
+                    Socio estratégico en la externalización laboral, contable y administrativa en LATAM. Conectamos mercados, blindamos operaciones y optimizamos tu rendimiento financiero.
+                </p>
+                <div class="footer-socials">
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 16px; height: 16px; fill: currentColor;">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 1 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 14px; height: 14px; fill: currentColor;">
+                                <path d="M80 299.3V256H16v-64h64v-46.7C80 81.5 116.1 48 181.7 48 213.2 48 240 50.4 247.9 51.5v76.8h-45.5c-30.7 0-36.7 14.6-36.7 36v51.7h85.2l-11.1 64h-74.1V448H80V299.3z"/>
+                            </svg>
+                        </a>  
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 16px; height: 16px; fill: currentColor;">
+                                <path d="M224.1 141c-43.6 0-79 35.4-79 79s35.4 79 79 79 79-35.4 79-79-35.4-79-79-79zm0 125c-25.3 0-46-20.7-46-46s20.7-46 46-46 46 20.7 46 46-20.7 46-46 46zm153.6-125.9c-4.4-11-13.2-19.8-24.1-24.2-12.7-5-42.9-3.9-74.1-3.9s-61.4-1.1-74.1 3.9c-11 4.4-19.8 13.2-24.2 24.2-5 12.7-3.9 42.9-3.9 74.1s-1.1 61.4 3.9 74.1c4.4 11 13.2 19.8 24.2 24.2 12.7 5 42.9 3.9 74.1 3.9s61.4 1.1 74.1-3.9c11-4.4 19.8-13.2 24.1-24.2 5-12.7 3.9-42.9 3.9-74.1s1.1-61.4-3.9-74.1zm-153.6 195c-53.5 0-96.9-43.4-96.9-96.9s43.4-96.9 96.9-96.9 96.9 43.4 96.9 96.9-43.4 96.9-96.9 96.9zm113.4-180.5c-12.5 0-22.7-10.2-22.7-22.7s10.2-22.7 22.7-22.7 22.7 10.2 22.7 22.7-10.2 22.7-22.7 22.7z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h4 class="footer-title">Navegación</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/#servicios">Servicios Corporativos</a></li>
+                    <li><a href="{{ url_for('nosotros') }}">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column links-col">
+                <h4 class="footer-title">Soluciones</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/#servicios">Headhunting ejecutivo</a></li>
+                    <li><a href="/#servicios">Nómina</a></li>
+                    <li><a href="/#servicios">Employer of Record</a></li>
+                    <li><a href="/#servicios">Tercerización</a></li>
+                    <li><a href="/#servicios">Contabilidad Corporativa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h4 class="footer-title">Contacto Central</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">Lima, Perú (Sede Central LATAM)</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-text">operaciones@ldpanam.com</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-text">+51 900 000 000</span>
+                    </li>
+                </ul>
+                <div class="footer-status-tag">
+                    <span class="status-pulse"></span> Operación Regional Activa
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 LD Panamerican Group. Todos los derechos reservados.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Políticas de Privacidad</a>
+                    <span class="legal-separator">|</span>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL FLOTANTE (AJAX FormSubmit adaptado a EOR) -->
+    <div id="modalDiagnostico" class="modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(6, 14, 26, 0.85); align-items: center; justify-content: center;">
+        <div class="modal-content" style="background-color: #ffffff; padding: 40px; border-radius: 16px; width: 90%; max-width: 500px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3);">
+            <span class="close-modal" onclick="toggleModal()" style="position: absolute; top: 15px; right: 20px; font-size: 28px; color: #64748B; cursor: pointer; font-weight: bold;">&times;</span>
+            
+            <h3 style="color: #0A192F; font-size: 1.6rem; margin-bottom: 8px; font-weight: 700;">Consulta sobre Employer of Record (EOR)</h3>
+            <p style="color: #64748B; font-size: 0.9rem; margin-bottom: 25px;">Completa tus datos y un especialista en movilidad global se pondrá en contacto contigo.</p>
+            
+            <form id="form-modal-eor" action="https://formsubmit.co/ajax/hcerna03@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nueva consulta desde Modal EOR">
+
+                <div style="margin-bottom: 15px;">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="email" name="correo" placeholder="Correo corporativo" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="tel" name="telefono" placeholder="Teléfono de contacto" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="text" name="empresa" placeholder="Empresa / Organización" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC;">
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <textarea name="mensaje" placeholder="Describe brevemente tu requerimiento de expansión o contratación..." rows="3" required style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; background-color: #F8FAFC; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn-form-submit" style="width: 100%; padding: 14px; background-color: #FF7A00; color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer; font-size: 1rem; box-shadow: 0 4px 15px rgba(255,122,0,0.3);">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Función Global para abrir/cerrar el Formulario Flotante (Modal)
+        function toggleModal() {
+            const modal = document.getElementById('modalDiagnostico');
+            if (modal) {
+                if (modal.style.display === 'flex') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; 
+                } else {
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; 
+                }
+            }
+        }
+
+        // Cerrar el modal al hacer clic fuera del cuadro blanco
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('modalDiagnostico');
+            if (event.target === modal) {
+                toggleModal();
+            }
+        });
+
+        // --- MANEJADOR AJAX PARA AMBOS FORMULARIOS EOR ---
+        function configurarEnvioFormulario(formId, onSuccessCallback) {
+            const form = document.getElementById(formId);
+            if (!form) return;
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn ? submitBtn.innerText : 'Enviar';
+
+                if (submitBtn) {
+                    submitBtn.innerText = 'Enviando...';
+                    submitBtn.style.opacity = '0.7';
+                    submitBtn.style.pointerEvents = 'none';
+                }
+
+                const formData = new FormData(this);
+                const actionUrl = this.getAttribute('action');
+
+                fetch(actionUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams(formData).toString()
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success === "true" || data.success === true) {
+                        form.reset();
+                        if (typeof onSuccessCallback === 'function') {
+                            onSuccessCallback();
+                        } else {
+                            alert("¡Solicitud enviada con éxito!");
+                        }
+                    } else {
+                        alert("FormSubmit indicó un error en el envío. Inténtalo de nuevo.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error de red en AJAX:', error);
+                    alert("Error de red al conectar con FormSubmit.");
+                })
+                .finally(() => {
+                    if (submitBtn) {
+                        submitBtn.innerText = originalText;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.style.pointerEvents = 'auto';
+                    }
+                });
+            });
+        }
+
+        // Inicializar Formulario Incrustado de EOR
+        configurarEnvioFormulario('form-incrustado-eor', () => {
+            alert("¡Requerimiento EOR enviado con éxito! Nos pondremos en contacto en breve.");
+        });
+
+        // Inicializar Formulario Flotante (Modal) de EOR
+        configurarEnvioFormulario('form-modal-eor', () => {
+            alert("Solicitud recibida. Un consultor senior de Panamerican lo contactará en breve.");
+            toggleModal(); // Cierra el modal automáticamente
+        });
+    </script>
+</body>
+</html>
